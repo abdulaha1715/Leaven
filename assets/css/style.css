@@ -41,6 +41,8 @@ ul, li {
   --primary: #f15724;
   --secondary: #202b31;
   --white: #ffffff;
+  --montserrat: 'Montserrat';
+  --mont: 'Mont Heavy DEMO';
 }
 
 
@@ -129,3 +131,84 @@ ul, li {
     top: -8px;
     right: -12px;
 }
+
+
+/* Header Main  */
+.leaven__header_area {
+    padding: 25px 0;
+}
+
+.leaven__logo {}
+
+.leaven__logo h1 {
+    color: var(--secondary);
+    font-family: var(--mont);
+}
+
+.leaven__logo h1 span {
+    color: var(--primary);
+}
+
+.leaven__main_menu {}
+
+.leaven__main_menu nav {}
+
+.leaven__main_menu nav ul {
+  text-align: center;
+}
+
+.leaven__main_menu nav ul li {
+    position: relative;
+    display: inline-block;
+}
+
+.leaven__main_menu nav ul li a {
+    display: block;
+    color: var(--secondary);
+    padding: 2px 15px;
+    font-family: var(--montserrat);
+    font-weight: 500;
+}
+
+.leaven__main_menu nav ul li a:hover {
+    color: var(--primary);
+}
+
+
+.leaven__search_box {}
+
+.leaven__search_box form {
+    display: flex;
+    justify-content: end;
+}
+
+.leaven__search_box form input:focus {
+    outline: none;
+    box-shadow: none;
+}
+.leaven__search_box form input {
+    border: 1px solid var(--primary);
+    padding: 2px 10px;
+    border-radius: 7px 0 0 7px;
+}
+
+.leaven__search_box form button {
+    color: var(--white);
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
+    padding: 0 10px;
+    border-radius: 0 7px 7px 0;
+    transition: all 0.3s ease;
+}
+
+.leaven__search_box form button:hover {
+    color: var(--primary);
+    background-color: transparent;
+}
+
+
+
+
+
+
+
