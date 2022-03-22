@@ -18,3 +18,110 @@
  *
  * 
  */
+
+
+/* Default css */
+a {
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+/* Variables */
+:root {
+  --primary: #f15724;
+  --secondary: #202b31;
+  --white: #ffffff;
+}
+
+
+/* Header Top Area */
+.leaven__header_top_area {
+    color: var(--white);
+    background-color: var(--secondary);
+    padding: 18px 0;
+}
+
+.leaven__header_top_area a {
+    color: var(--white);
+}
+
+.leaven__header_top_area a:hover {
+    color: var(--primary);
+}
+
+.leaven__header_top_area ul li {
+    display: inline-block;
+}
+
+
+.leaven__top_left_content {}
+
+.leaven__top_left_content ul li {
+    margin-right: 10px;
+}
+
+.leaven__social_media ul li {
+    margin: 0px 4px;
+}
+
+.leaven__social_media ul li a {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    color: var(--secondary);
+    background-color: var(--white);
+    text-align: center;
+    font-size: 14px;
+    border-radius: 50%;
+}
+
+.leaven__social_media ul li a:hover {
+    color: var(--white);
+    background-color: var(--primary);
+}
+
+.leaven__top_left_content a i {
+    margin-right: 7px;
+}
+
+.leaven__top_right_content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.leaven__site_meta ul li {
+    margin: 0px 5px;
+    position: relative;
+}
+
+.leaven__site_meta ul li:last-child {
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+.leaven__site_meta ul li span.lea-separetor {
+    display: inline-block;
+    padding: 0 8px;
+}
+
+.leaven__site_meta ul li:last-child span {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    color: var(--white);
+    background-color: var(--primary);
+    text-align: center;
+    font-size: 80%;
+    border-radius: 50%;
+    top: -8px;
+    right: -12px;
+}
