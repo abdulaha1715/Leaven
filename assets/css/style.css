@@ -21,6 +21,9 @@
 
 
 /* Default css */
+body {
+    font-family: 'Montserrat', sans-serif;
+}
 a {
     text-decoration: none;
     transition: all 0.3s ease;
@@ -46,6 +49,7 @@ ul, li {
     color: var(--white);
     background-color: var(--secondary);
     padding: 18px 0;
+    font-size: 14px;
 }
 
 .leaven__header_top_area a {
@@ -65,6 +69,7 @@ ul, li {
 
 .leaven__top_left_content ul li {
     margin-right: 10px;
+    font-weight: 300;
 }
 
 .leaven__social_media ul li {
@@ -79,7 +84,6 @@ ul, li {
     color: var(--secondary);
     background-color: var(--white);
     text-align: center;
-    font-size: 14px;
     border-radius: 50%;
 }
 
