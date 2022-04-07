@@ -40,6 +40,7 @@ ul, li {
 :root {
   --primary: #f15724;
   --secondary: #202b31;
+  --gray: #585858;
   --white: #ffffff;
   --montserrat: 'Montserrat';
   --mont: 'Mont Heavy DEMO';
@@ -197,6 +198,7 @@ ul, li {
     visibility: hidden;
     opacity: 0;
     transition: all 0.3s ease;
+    z-index: 2;
 }
 
 .leaven__main_menu nav ul li ul.submenu li {
@@ -317,5 +319,54 @@ section.leaven__hero_area {}
 
 
 
+/* Promo area */
+section.leaven__promo_area {
+    position: relative;
+    margin-top: -50px;
+    z-index: 1;
+}
+
+.leaven__single_promo_item {
+    display: flex;
+    align-items: center;
+    background: #F4F9FD;
+    padding: 15px 10px;
+    transition: all 0.4s ease;
+}
+
+.leaven__promo_icon {
+    flex: 1;
+    text-align: center;
+    font-size: 40px;
+}
+
+.leaven__promo_icon i {}
+
+.leaven__promo_content {
+    flex: 3;
+}
+
+.leaven__promo_content h3 {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+    font-family:  var(--montserrat);
+    margin: 0;
+}
+
+.leaven__promo_content p {
+    margin: 0;
+    color: var(--gray);
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.leaven__single_promo_item:hover, .leaven__single_promo_item.active {
+    background: red;
+    color: #fff;
+}
+.leaven__single_promo_item:hover p, .leaven__single_promo_item.active p {
+    color: #fff;
+}
 
 
