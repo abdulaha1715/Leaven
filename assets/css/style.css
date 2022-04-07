@@ -365,8 +365,23 @@ section.leaven__promo_area {
     background: red;
     color: #fff;
 }
+
 .leaven__single_promo_item:hover p, .leaven__single_promo_item.active p {
     color: #fff;
 }
+
+/* Order area */
+section.leaven__offer_area {}
+
+.leaven__offer_img {}
+
+.leaven__offer_img img {}
+
+.leaven__offer_content {}
+
+.leaven__offer_content h2 {}
+
+.leaven__offer_content a.leaven__offer_btn {}
+
 
 
