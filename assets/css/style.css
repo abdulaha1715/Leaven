@@ -30,7 +30,8 @@ a {
     transition: all 0.3s ease;
 }
 
-ul, li {
+ul,
+li {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -61,14 +62,14 @@ ul, li {
 
 /* Variables */
 :root {
-  --primary: #f15724;
-  --secondary: #202b31;
-  --gray: #585858;
-  --graybg: #f7f7f6;
-  --white: #ffffff;
-  --montserrat: 'Montserrat';
-  --mont: 'Mont Heavy DEMO';
-  --bebas: 'Bebas Neue';
+    --primary: #f15724;
+    --secondary: #202b31;
+    --gray: #585858;
+    --graybg: #f7f7f6;
+    --white: #ffffff;
+    --montserrat: 'Montserrat';
+    --mont: 'Mont Heavy DEMO';
+    --bebas: 'Bebas Neue';
 }
 
 
@@ -182,7 +183,7 @@ ul, li {
 .leaven__main_menu nav {}
 
 .leaven__main_menu nav ul {
-  text-align: center;
+    text-align: center;
 }
 
 .leaven__main_menu nav ul li {
@@ -261,6 +262,7 @@ ul, li {
     outline: none;
     box-shadow: none;
 }
+
 .leaven__search_box form input {
     border: 1px solid var(--primary);
     padding: 2px 10px;
@@ -374,7 +376,7 @@ section.leaven__promo_area {
     text-transform: uppercase;
     font-size: 18px;
     font-weight: 600;
-    font-family:  var(--montserrat);
+    font-family: var(--montserrat);
     margin: 0;
 }
 
@@ -385,32 +387,94 @@ section.leaven__promo_area {
     font-weight: 300;
 }
 
-.leaven__single_promo_item:hover, .leaven__single_promo_item.active {
+.leaven__single_promo_item:hover,
+.leaven__single_promo_item.active {
     background: red;
     color: #fff;
 }
 
-.leaven__single_promo_item:hover p, .leaven__single_promo_item.active p {
+.leaven__single_promo_item:hover p,
+.leaven__single_promo_item.active p {
     color: #fff;
 }
 
 
-/* Order area */
-section.leaven__sale_area {padding-top: 50px;background-color: var(--graybg);}
+/* Sale Area */
+section.leaven__sale_area {
+    padding-top: 50px;
+    background-color: var(--graybg);
+}
 
-.leaven__sale_img {background-repeat: no-repeat;background-size: contain;background-position: bottom;}
+.leaven__sale_img {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+}
 
 .leaven__sale_img img {}
 
-.leaven__sale_content {padding: 200px 0;}
+.leaven__sale_content {
+    padding: 200px 0;
+}
 
-.leaven__sale_content h2 {font-weight: 600;margin: 0;font-size: 50px;text-transform: uppercase;color: var(--secondary);margin-bottom: 30px;}
+.leaven__sale_content h2 {
+    font-weight: 600;
+    margin: 0;
+    font-size: 50px;
+    text-transform: uppercase;
+    color: var(--secondary);
+    margin-bottom: 30px;
+}
 
 .leaven__sale_content a.leaven__sale_btn {}
 
 
+/* Offer Area */
+section.leaven__offer_area {
+    padding: 100px 0;
+}
 
+.leaven__single_offer {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
 
+.leaven__offer_content {
+    text-align: right;
+    width: 190px;
+    margin-left: auto;
+    padding: 20px;
+    color: var(--white);
+}
 
+.leaven__offer_content h3 {
+    font-size: 28px;
+    text-transform: uppercase;
+}
 
+.leaven__offer_content a {
+    color: var(--white);
+    text-transform: uppercase;
+    text-decoration: underline;
+}
 
+.leaven__offer_content_img {
+    padding: 0 10px;
+}
+
+.leaven__offer_content_img img {
+    width: 100%;
+}
+
+.leaven__offer_content_img img:nth-child(1) {
+    margin-bottom: 20px;
+}
+
+.leaven__offer_content.black,
+.leaven__offer_content.black a {
+    color: var(--secondary);
+    margin-left: 0;
+    text-align: left;
+}
