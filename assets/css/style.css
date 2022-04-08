@@ -24,6 +24,7 @@
 body {
     font-family: 'Montserrat', sans-serif;
 }
+
 a {
     text-decoration: none;
     transition: all 0.3s ease;
@@ -35,12 +36,35 @@ ul, li {
     list-style: none;
 }
 
+.leaven__btn {
+    display: inline-block;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    border: 1px solid;
+    color: var(--primary);
+}
+
+.leaven__btn i {
+    margin-left: 10px;
+}
+
+.leaven__sale_btn {
+    color: var(--white);
+    background-color: var(--primary);
+}
+
+.leaven__sale_btn:hover {
+    color: var(--primary);
+    background-color: transparent;
+}
+
 
 /* Variables */
 :root {
   --primary: #f15724;
   --secondary: #202b31;
   --gray: #585858;
+  --graybg: #f7f7f6;
   --white: #ffffff;
   --montserrat: 'Montserrat';
   --mont: 'Mont Heavy DEMO';
@@ -370,18 +394,23 @@ section.leaven__promo_area {
     color: #fff;
 }
 
+
 /* Order area */
-section.leaven__offer_area {}
+section.leaven__sale_area {padding-top: 50px;background-color: var(--graybg);}
 
-.leaven__offer_img {}
+.leaven__sale_img {background-repeat: no-repeat;background-size: contain;background-position: bottom;}
 
-.leaven__offer_img img {}
+.leaven__sale_img img {}
 
-.leaven__offer_content {}
+.leaven__sale_content {padding: 200px 0;}
 
-.leaven__offer_content h2 {}
+.leaven__sale_content h2 {font-weight: 600;margin: 0;font-size: 50px;text-transform: uppercase;color: var(--secondary);margin-bottom: 30px;}
 
-.leaven__offer_content a.leaven__offer_btn {}
+.leaven__sale_content a.leaven__sale_btn {}
+
+
+
+
 
 
 
