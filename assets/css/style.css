@@ -72,6 +72,43 @@ li {
     --bebas: 'Bebas Neue';
 }
 
+/* Section Title and below style */
+.leaven__section_title h2 {
+    margin: 0;
+}
+
+.leaven__section_title {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+span.leaven__title_dots {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background: var(--primary);
+    border-radius: 50%;
+}
+
+span.leaven__title_dots:after,
+span.leaven__title_dots:before {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: var(--primary);
+    border-radius: 50%;
+}
+
+span.leaven__title_dots:before {
+    right: 20px;
+}
+
+span.leaven__title_dots:after {
+    left: 20px;
+}
+
 
 /* Header Top Area */
 .leaven__header_top_area {
@@ -486,3 +523,115 @@ section.leaven__offer_area {
     margin-left: 0;
     text-align: left;
 }
+
+/* Most View Area */
+.leaven__most_view_product_area {
+    padding: 100px 0;
+    background-color: #F5F5F5;
+}
+
+.leaven__most_view_carousel {}
+
+.leaven__single_carousel_item {
+    text-align: center;
+    background-color: var(--white);
+    padding: 50px;
+    transform: scale(0.6);
+    transition: all 0.4s ease;
+}
+
+.leaven__single_carousel_thum {
+    height: 250px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.leaven__single_carousel_meta {
+    margin: 20px 0;
+}
+
+.leaven__single_carousel_meta ul {}
+
+.leaven__single_carousel_meta ul li {
+    margin: 0 5px;
+}
+
+.leaven__single_carousel_meta ul li a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    align-items: center;
+    color: var(--secondary);
+    background: #F5F5F5;
+    border: 1px solid #F5F5F5;
+    transition: all 0.4s ease;
+}
+
+.leaven__single_carousel_meta ul li a:hover {
+    color: var(--white);
+    background: var(--primary);
+}
+
+.leaven__single_carousel_meta ul li a i {}
+
+.leaven__single_carousel_item h3 {
+    font-size: 16px;
+}
+
+.leaven__single_carousel_item.slick-slide.slick-active.slick-center .leaven__single_carousel_item h3 {
+    font-size: 18px;
+}
+
+.leaven__single_carousel_item p {
+    font-size: 14px;
+}
+
+.leaven__single_carousel_meta {
+    opacity: 0;
+    margin-top: -30px;
+}
+
+.leaven__single_carousel_item.slick-slide.slick-active.slick-center {
+    transform: scale(1.2);
+    padding: 70px 50px;
+    transition: all 0.4s ease;
+}
+
+.leaven__single_carousel_item.slick-slide.slick-active.slick-center .leaven__single_carousel_meta {
+    opacity: 1;
+    margin-top: 20px;
+}
+
+/* Carousel button */
+button.slick-prev.pull-left,
+button.slick-next.pull-right {
+    width: 30px;
+    height: 30px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid #222;
+}
+
+button.slick-prev.pull-left {
+    left: 32%;
+    z-index: 5;
+}
+
+button.slick-next.pull-right {
+    right: 32%;
+    z-index: 5;
+}
+
+button.slick-prev.pull-left i,
+button.slick-next.pull-right i {
+    font-size: 21px;
+    color: #222;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    font-size: 0 !important;
+}
+
