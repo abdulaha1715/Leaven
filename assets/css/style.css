@@ -691,11 +691,13 @@ span.leaven__product_ribon:after {
     clip-path: polygon(100% 0%, 63% 50%, 100% 100%, 0 98%, 0% 50%, 0 0);
 }
 
-.leaven__on_sale, .leaven__on_sale:after {
+.leaven__on_sale,
+.leaven__on_sale:after {
     background: #CB24F5 !important;
 }
 
-.leaven__new_arrivals, .leaven__new_arrivals:after {
+.leaven__new_arrivals,
+.leaven__new_arrivals:after {
     background: var(--primary);
 }
 
@@ -824,5 +826,38 @@ span.leaven__product_ribon:after {
 .leaven__product_sizes ul li a:hover {
     color: var(--white);
     background-color: var(--primary);
+    border: 1px solid var(--primary);
+}
+
+/* Call to action */
+section.leaven__call_to_action_area {
+    padding: 0 0 100px 0;
+}
+
+.leaven__call_to_action_area_content {
+    color: var(--white);
+    padding: 70px 100px;
+    background-color: rgb(32, 43, 48, .5);
+    background-blend-mode: overlay;
+}
+
+.leaven__call_to_action_area_content h3 {
+    font-size: 21px;
+}
+
+.leaven__call_to_action_area_content h2 {
+    font-size: 46px;
+    font-weight: 700;
+}
+
+.leaven__cta_btn {
+    color: var(--white);
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
+}
+
+.leaven__cta_btn:hover {
+    color: var(--white);
+    background-color: transparent;
     border: 1px solid var(--primary);
 }
