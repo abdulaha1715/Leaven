@@ -375,9 +375,22 @@ section.leaven__hero_area {}
     display: inline-block;
 }
 
-
 .leaven__hero_item_content a.leaven__hero_btn:hover {
     background-color: transparent;
+}
+
+ul.slick-dots {
+    bottom: 15%;
+}
+.slick-dots li {
+    width: 15px;
+    height: 15px;
+    background: var(--white);
+    border-radius: 50%;
+}
+
+.slick-dots li.slick-active {
+    background: var(--primary);
 }
 
 
@@ -634,4 +647,3 @@ button.slick-next.pull-right i {
 .slick-next:before {
     font-size: 0 !important;
 }
-
