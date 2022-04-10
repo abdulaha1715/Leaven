@@ -46,6 +46,17 @@
             ]
         });
 
+        // Hero Area Slider
+        $('.leaven__payment_carousel').slick({
+            dots: false,
+            arrows: false,
+            infinite: true,
+            slidesToShow: 4,
+            speed: 2000,
+            autoplay: true,
+            autoplaySpeed: 1000,
+        });
+
     });
 
 }(jQuery));

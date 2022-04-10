@@ -917,6 +917,24 @@ section.leaven__call_to_action_area {}
     font-size: 12px;
 }
 
+/* Payment carousel */
+section.leaven__payment_logos {
+    padding: 100px 0;
+}
+
+.leaven__payment_carousel {}
+
+.leaven__payment_logo {}
+
+.leaven__payment_logo img {
+    width: 115px;
+    filter: grayscale(100%);
+    margin: auto;
+}
+
+.leaven__payment_logo img:hover {
+    filter: grayscale(0%);
+}
 
 
 /* Footer */
@@ -1071,4 +1089,3 @@ ul.leaven__footer_social_media li a i {}
 .leaven__copyright_text span {
     font-size: 15px;
 }
-
