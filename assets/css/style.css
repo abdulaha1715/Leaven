@@ -916,3 +916,159 @@ section.leaven__call_to_action_area {}
 .leaven__best_seller_single_product h4 {
     font-size: 12px;
 }
+
+
+
+/* Footer */
+
+/* Footer top area */
+footer {}
+
+.leaven__footer_top_area {
+    padding: 50px 0;
+    background: var(--secondary);
+    color: var(--white);
+}
+
+.leaven__widget {}
+
+.leaven__footer_info {}
+
+.leaven__footer_logo {}
+
+.leaven__footer_logo h1 {
+    color: var(--white);
+}
+
+.leaven__footer_info p {
+    font-size: 15px;
+    padding-right: 20px;
+}
+
+.leaven__footer_info ul {}
+
+.leaven__footer_info ul li {
+    margin-bottom: 5px;
+}
+
+.leaven__footer_info ul li a {
+    color: var(--white);
+    font-size: 15px;
+}
+
+.leaven__footer_info ul li a i {
+    margin-right: 8px;
+    width: 15px;
+    text-align: center;
+}
+
+.leaven__footer_menu {}
+
+.leaven__widget_title {
+    margin-bottom: 28px;
+}
+
+.leaven__widget_title h3 {
+    text-transform: capitalize;
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.leaven__widget_title h3:after {
+    position: absolute;
+    content: "";
+    width: 42px;
+    height: 3px;
+    background: red;
+    top: 30px;
+    left: 0;
+}
+
+ul.leaven__footer_menu_item {}
+
+ul.leaven__footer_menu_item li {
+    margin-bottom: 5px;
+}
+
+ul.leaven__footer_menu_item li i {
+    margin-right: 5px;
+}
+
+ul.leaven__footer_menu_item li a {
+    color: var(--white);
+}
+
+ul.leaven__footer_menu_item li a:hover {
+    color: var(--primary);
+}
+
+ul.leaven__footer_menu_item li a:hover ul.leaven__footer_menu_item li a i {
+    color: var(--white);
+}
+
+.leaven__footer_links {}
+
+.leaven__app_link {
+    display: flex;
+    margin-bottom: 35px;
+}
+
+.leaven__app_link a {
+    margin-right: 15px;
+}
+
+.leaven__app_link img {}
+
+.leaven__footer_links h4 {
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+ul.leaven__footer_social_media {}
+
+ul.leaven__footer_social_media li {
+    display: inline-block;
+    margin-right: 8px;
+}
+
+ul.leaven__footer_social_media li a {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid var(--white);
+    color: var(--secondary);
+    background: var(--white);
+    border-radius: 50%;
+    font-size: 14px;
+}
+
+ul.leaven__footer_social_media li a:hover {
+    color: var(--white);
+    background: var(--primary);
+    border: 1px solid var(--primary);
+}
+
+ul.leaven__footer_social_media li a i {}
+
+/* Footer bottom area */
+.leaven__footer_bottom_area {
+    background: var(--primary);
+    color: var(--white);
+    padding: 30px 0;
+}
+
+.leaven__copyright_text {}
+
+.leaven__copyright_text p {
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.leaven__copyright_text span {
+    font-size: 15px;
+}
+
