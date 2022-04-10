@@ -333,6 +333,10 @@ section.leaven__hero_area {}
     z-index: 1;
 }
 
+section.leaven__hero_area.slick-initialized.slick-slider {
+    margin: 0 !important;
+}
+
 .leaven__hero_single_item:after {
     position: absolute;
     content: "";
@@ -410,6 +414,7 @@ section.leaven__promo_area {
     background: #F4F9FD;
     padding: 15px 10px;
     transition: all 0.4s ease;
+    box-shadow: 0 0 1px #222;
 }
 
 .leaven__promo_icon {
@@ -453,8 +458,9 @@ section.leaven__promo_area {
 
 /* Sale Area */
 section.leaven__sale_area {
-    padding-top: 50px;
+    padding-top: 100px;
     background-color: var(--graybg);
+    margin-top: -50px;
 }
 
 .leaven__sale_img {
@@ -915,6 +921,69 @@ section.leaven__call_to_action_area {}
 
 .leaven__best_seller_single_product h4 {
     font-size: 12px;
+}
+
+/* Newsletter */
+section.leaven__newsletter {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    padding: 75px 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section.leaven__newsletter:after {
+    position: absolute;
+    content: "";
+    background: var(--secondary);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: .3;
+    z-index: -1;
+}
+
+.leaven__newsletter_content {}
+
+.leaven__newsletter_content h2 {
+    font-size: 52px;
+    font-weight: 600;
+}
+
+.leaven__newsletter_content h4 {
+    font-size: 25px;
+}
+
+.leaven__newsletter_content form {
+    margin-top: 39px;
+    margin-bottom: 20px;
+}
+
+.leaven__newsletter_content input[type="email"] {
+    width: 24%;
+    padding: 10px;
+    margin-right: 35px;
+    border: 2px solid var(--primary);
+    border-radius: 5px;
+}
+
+.leaven__newsletter_content button {
+    width: 16%;
+    padding: 10px;
+    border: 2px solid var(--primary);
+    background: var(--primary);
+    color: var(--white);
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.leaven__newsletter_content span {
+    font-size: 14px;
 }
 
 /* Payment carousel */
