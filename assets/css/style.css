@@ -209,6 +209,7 @@ span.leaven__title_dots:after {
 .leaven__logo h1 {
     color: var(--secondary);
     font-family: var(--mont);
+    font-size: 38px;
 }
 
 .leaven__logo h1 span {
@@ -1158,3 +1159,34 @@ ul.leaven__footer_social_media li a i {}
 .leaven__copyright_text span {
     font-size: 15px;
 }
+
+
+/* Error Page */
+
+/*  */
+section.leaven__error_content_area {
+    padding: 300px 0;
+}
+
+.leaven__error_content_bg {
+    height: 360px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-bottom: 40px;
+}
+
+a.leaven__error_btn {
+    color: var(--white);
+    background: var(--secondary);
+    padding: 10px 30px;
+    border: 1px solid var(--secondary);
+}
+
+a.leaven__error_btn:hover {
+    color: var(--secondary);
+    background: transparent;
+    border: 1px solid var(--secondary);
+}
+
+
