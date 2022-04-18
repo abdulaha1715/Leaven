@@ -128,14 +128,14 @@ section.leaven__page_title h2 {
 .leaven__page_head_breadcrumb ul li {
     display: inline-block;
     position: relative;
-    padding-right: 28px;
+    padding-right: 22px;
 }
 
 .leaven__page_head_breadcrumb ul li:after {
     position: absolute;
     content: "\f101";
     font-family: 'FontAwesome';
-    right: 8px;
+    right: 4px;
     font-size: 15px;
 }
 
@@ -1325,13 +1325,13 @@ div#countdown ul li span {
     border-radius: 5px;
 }
 
-.leaven__social_media {
+.leaven__comming_soon_social_media {
     margin-top: 20px;
 }
 
-.leaven__social_media ul {}
+.leaven__comming_soon_social_media ul {}
 
-.leaven__social_media ul li {
+.leaven__comming_soon_social_media ul li {
     display: inline-block;
 }
 
@@ -1414,6 +1414,311 @@ section.leaven__faq_page_content {
     font-weight: 500;
     border-radius: 0;
     padding: 4px 24px;
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
+    transition: all 0.3s ease;
+}
+
+/* cart */
+
+section.leaven__cart_page_content {
+    padding: 100px 0;
+}
+
+.leaven__cart_table {}
+
+.leaven__cart_table table {}
+
+.leaven__cart_table thead {
+    border-top: 1px solid var(--primary);
+    border-bottom: 1px solid var(--primary);
+}
+
+.leaven__cart_table thead tr {}
+
+.leaven__cart_table thead tr th {
+    text-align: center;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.leaven__cart_table .table>:not(:first-child) {
+    border-top: none;
+}
+
+.leaven__cart_table tbody tr {
+    border-bottom: 1px solid var(--primary) !important;
+}
+
+.leaven__cart_table tbody tr td {
+    padding: 12px 0;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.leaven__product_text {
+    text-align: left;
+    padding-left: 20px;
+}
+
+.leaven__product_text h3 {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.leaven__product_text h5 {
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+span.leaven__product_price,
+span.leaven__product_totla_price {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.leaven__quantity_block {
+    width: 100px;
+    position: relative;
+    margin: 0 auto;
+}
+
+button.leaven__quantity_arrow_minus,
+button.leaven__quantity_arrow_plus {
+    cursor: pointer;
+    font-size: 15px;
+    padding: 5px;
+    width: 25px;
+    box-sizing: border-box;
+
+    outline: none;
+    border-radius: 0;
+    border: 2px solid;
+    background: transparent;
+}
+
+button.leaven__quantity_arrow_minus {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+button.leaven__quantity_arrow_plus {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+input.leaven__quantity_num {
+    font-size: 15px;
+    padding: 5px 0 5px 15px;
+    border-radius: 4px;
+    outline: none;
+    width: 100%;
+    text-align: center;
+}
+
+td.cross {
+    font-size: 16px;
+    font-weight: 700;
+    padding-right: 10px !important;
+}
+
+
+
+
+.leaven__cart_form {
+    padding: 25px 12px;
+    box-shadow: 1px 3px 12px -5px rgb(32 43 48);
+}
+
+.leaven__subtotal,
+.leaven__discount {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.leaven__discount p,
+.leaven__subtotal p {
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.leaven__coupon {
+    padding: 25px 0 35px;
+}
+
+input#coupon_code {
+    display: block;
+    width: 100%;
+    border: 3px solid var(--primary);
+    padding: 5px 5px;
+    margin-bottom: 12px;
+    outline: none;
+}
+
+button.leaven__coupon_button {
+    width: 100%;
+    display: block;
+    border: 2px solid var(--primary);
+    padding: 6px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--white);
+    background: var(--primary);
+}
+
+.leaven__cart_bottom_button {}
+
+.leaven__cart_bottom_button a {
+    padding: 4px;
+    display: block;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 0;
+    transition: all 0.3s ease;
+}
+
+.leaven__continue_shopping {
+    background-color: var(--secondary);
+    border: 2px solid var(--secondary);
+}
+
+.leaven__continue_shopping:hover {
+    border: 2px solid var(--secondary);
+    color: var(--secondary);
+    background-color: transparent;
+}
+
+.leaven__to_checkout {
+    margin-top: 20px;
+    background-color: var(--primary);
+    border: 2px solid var(--primary);
+}
+
+.leaven__to_checkout:hover {
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    background-color: transparent;
+}
+
+
+/* contact */
+section.leaven__contact_page_content {
+    padding: 100px 0;
+}
+
+.leaven__contact_page_info {
+    padding: 20px 40px !important;
+}
+
+.leaven__contact_page_info,
+.leaven__contact_form {
+    box-shadow: 1px 3px 12px -5px rgb(32 43 48);
+    padding: 20px;
+}
+
+.leaven__contact_page_info h3,
+.leaven__contact_form h3 {
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--primary);
+    margin-bottom: 20px;
+}
+
+.leaven__contact_info_social_list {
+    margin-bottom: 50px;
+}
+
+.leaven__contact_info_social_list h3 {
+    margin: 0;
+}
+
+.leaven__contact_info_social_list li {
+    display: inline-block;
+    padding: 5px;
+}
+
+.leaven__contact_info_social_list li a {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    color: var(--primary);
+    border-radius: 50%;
+    font-size: 24px;
+    line-height: 45px;
+}
+
+.leaven__contact_info_social_list li a:hover {
+    color: var(--white);
+    background: var(--primary);
+}
+
+.leaven__contact_info_list {
+    padding-left: 25px;
+    margin-bottom: 45px;
+}
+
+.leaven__contact_info_list li {
+    margin-bottom: 10px;
+}
+
+.leaven__contact_info_list li a {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.leaven__contact_info_list li a i {
+    display: inline-block;
+    width: 25px;
+    text-align: center;
+    margin-right: 8px;
+}
+
+
+.leaven__contact_form {}
+
+.leaven__contact_form h3 {
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.leaven__contact_form label.form-label {
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+
+.leaven__contact_form .form-control {
+    background-color: #EDEDED;
+    border-radius: 0;
+    outline: none;
+    margin-bottom: 15px;
+    border: transparent;
+    box-shadow: none;
+}
+
+.leaven__contact_form textarea {
+    resize: none;
+}
+
+.leaven__contact_form button {
+    display: block;
+    margin-left: auto;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 0;
+    padding: 4px 24px;
+    text-transform: capitalize;
     background-color: var(--primary);
     border: 1px solid var(--primary);
     transition: all 0.3s ease;
