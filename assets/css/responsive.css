@@ -69,6 +69,16 @@ section.leaven__payment_logos {
     height: 260px;
 }
 
+/* comming soon */
+section.leaven__comming_soon_area {
+    padding: 100px 0;
+}
+
+.leaven__comming_soon_content h2 {
+    font-size: 82px;
+    line-height: 84px;
+}
+
 }
 
 
@@ -102,6 +112,34 @@ section.leaven__payment_logos {
 /* 404 */
 .leaven__error_content_bg {
     height: 200px;
+}
+
+
+/* comming soon */
+section.leaven__comming_soon_area {
+    padding: 100px 0;
+}
+
+.leaven__comming_soon_content h2 {
+    font-size: 78px;
+    line-height: 84px;
+}
+
+/* comming soon */
+div#countdown ul li {
+    font-size: 14px;
+    width: 120px;
+}
+
+div#countdown ul li:after {
+    width: 80px;
+    height: 80px;
+    top: -30%;
+    left: 18%;
+}
+
+.leaven__comming_soon_form input[type="email"] {
+    width: 40%;
 }
 
 }
@@ -154,6 +192,20 @@ ul.slick-dots {bottom: 10%;}
 /* 404 */
 .leaven__error_content_bg {
     height: 140px;
+}
+
+/*  */
+.leaven__comming_soon_form input[type="email"] {
+    width: 66%;
+    margin-right: 0 !important;
+    margin: 0 auto;
+}
+
+.leaven__comming_soon_form button {
+    width: auto;
+    display: block;
+    margin: 0 auto;
+    margin-top: 15px;
 }
 
 }
@@ -228,6 +280,24 @@ section.leaven__header_top_area {
 /* 404 */
 .leaven__error_content_bg {
     height: 95px;
+}
+
+/* commint soon */
+.leaven__comming_soon_content h2 {
+    font-size: 58px;
+    line-height: 58px;
+}
+
+.leaven__comming_soon_content h4 {
+    font-size: 28px;
+}
+
+div#countdown ul li {
+    margin-bottom: 90px;
+}
+
+div#countdown {
+    padding: 60px 0 0;
 }
 
 }

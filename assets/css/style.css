@@ -1239,7 +1239,6 @@ section.leaven__comming_soon_area {
     background-repeat: no-repeat;
     position: relative;
     z-index: 1;
-    padding: 200px 0;
 }
 
 section.leaven__comming_soon_area:after {
@@ -1314,6 +1313,10 @@ div#countdown ul li span {
     border-radius: 5px;
     background: transparent;
     color: var(--white);
+}
+
+input[type="email"]::placeholder {
+  color: var(--white);
 }
 
 .leaven__comming_soon_form button {
