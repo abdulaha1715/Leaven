@@ -1458,6 +1458,10 @@ section.leaven__cart_page_content {
     border-bottom: 1px solid var(--primary) !important;
 }
 
+span.leaven__product_price_before,
+span.leaven__product_quantity_before,
+span.leaven__product_totla_price_before {display: none;}
+
 .leaven__cart_table tbody tr td {
     padding: 12px 0;
     text-align: center;
@@ -1529,7 +1533,7 @@ input.leaven__quantity_num {
     text-align: center;
 }
 
-td.cross {
+td.leaven__product_cross {
     font-size: 16px;
     font-weight: 700;
     padding-right: 10px !important;
