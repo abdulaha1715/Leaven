@@ -65,9 +65,6 @@ section.leaven__payment_logos {
 }
 
 /* 404 */
-section.leaven__error_content_area {
-    padding: 200px 0;
-}
 .leaven__error_content_bg {
     height: 260px;
 }
@@ -105,10 +102,6 @@ section.leaven__error_content_area {
 /* 404 */
 .leaven__error_content_bg {
     height: 200px;
-}
-
-section.leaven__error_content_area {
-    padding: 140px 0;
 }
 
 }
