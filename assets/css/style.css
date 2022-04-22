@@ -1052,12 +1052,14 @@ section.leaven__payment_logos {
 footer {}
 
 .leaven__footer_top_area {
-    padding: 50px 0;
+    padding: 50px 0 20px;
     background: var(--secondary);
     color: var(--white);
 }
 
-.leaven__widget {}
+.leaven__widget {
+    padding-bottom: 35px;
+}
 
 .leaven__footer_info {}
 
@@ -1137,12 +1139,13 @@ ul.leaven__footer_menu_item li a:hover ul.leaven__footer_menu_item li a i {
 .leaven__footer_links {}
 
 .leaven__app_link {
-    display: flex;
-    margin-bottom: 35px;
+    display: block;
+    margin-bottom: 20px;
 }
 
 .leaven__app_link a {
     margin-right: 15px;
+    margin-bottom: 15px;
 }
 
 .leaven__app_link img {}
