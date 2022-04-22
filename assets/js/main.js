@@ -7,6 +7,15 @@
         $('.leaven__main_menu nav ul li ul').addClass('submenu');
         $('.leaven__main_menu nav ul li ul').before('<span><i class="fa fa-angle-down"></i></span>');
 
+
+        $(".leaven__search_btn").click(function(){
+            $(".leaven__search_input").toggleClass("active");
+        });
+        
+        $(".leaven__menu_icon").click(function(){
+            $(".leaven__menu_icon").toggleClass("active");
+        });
+
         // Hero Area Slider
         $('.leaven__hero_area').slick({
             dots: true,

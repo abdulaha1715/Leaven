@@ -248,6 +248,7 @@ section.leaven__page_title h2 {
 /* Header Main  */
 .leaven__header_area {
     padding: 25px 0;
+    position: relative;
 }
 
 /* Logo */
@@ -366,6 +367,45 @@ section.leaven__page_title h2 {
 .leaven__search_box form button:hover {
     color: var(--primary);
     background-color: transparent;
+}
+
+.leaven__menu_icon {
+    position: relative;
+    top: -4px;
+    right: 0;
+    width: 35px;
+    height: 12px;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: none;
+}
+
+.leaven__menu_icon span {
+    width: 100%;
+    height: 3px;
+    display: block;
+    background: #222;
+    margin: 6px 0;
+    transition: 0.5s;
+}
+
+.leaven__menu_icon.active span {
+    position: absolute;
+    width: calc(100% - 0px);
+    top: calc(0% - -5px);
+}
+
+.leaven__menu_icon.active span:nth-child(1) {
+    transform: rotate(45deg);
+}
+
+.leaven__menu_icon.active span:nth-child(2) {
+    display: none;
+}
+
+.leaven__menu_icon.active span:nth-child(3) {
+    transform: rotate(-45deg);
 }
 
 /* Hero area */

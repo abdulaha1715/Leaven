@@ -19,30 +19,62 @@
  * 
  */
 
-section.leaven__header_area {
-    display: none;
-}
-
-
-
 /* X-Large devices (large desktops, less than 1400px) */
-@media screen and (max-width: 1399.98px) {
+@media screen and (max-width: 1399.98px) {}
 
-    /* Home */
+/* Large devices (desktops, less than 1200px) */
+@media screen and (max-width: 1199.98px) {
+
+    /* Header top area */
     section.leaven__header_top_area {
         display: none;
     }
 
-    .leaven__top_left_content {
-        display: none;
+    .leaven__logo h1 {
+        font-size: 28px;
     }
 
-    /*  */
+    .leaven__main_menu {
+        position: absolute;
+    }
 
-}
+    .leaven__search_box form {
+        display: block;
+        position: relative;
+    }
 
-/* Large devices (desktops, less than 1200px) */
-@media screen and (max-width: 1199.98px) {
+    .leaven__search_box form input {
+        position: absolute;
+        top: 140px;
+        right: 12px;
+        border-radius: 4px;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+    }
+
+    .leaven__search_input.active {
+        top: 28px;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .leaven__search_box {
+        display: flex;
+        justify-content: right;
+    }
+
+    .leaven__search_box form button {
+        background: transparent;
+        border: none;
+        color: var(--primary);
+        font-size: 16px;
+        margin-right: 12px;
+    }
+
+    .leaven__menu_icon {
+        display: block;
+    }
 
     /* Home */
     .leaven__promo_content {
@@ -82,6 +114,11 @@ section.leaven__header_area {
     .leaven__comming_soon_content h2 {
         font-size: 82px;
         line-height: 84px;
+    }
+
+    /* contact */
+    .leaven__contact_info_social_list {
+        margin-bottom: 26px;
     }
 
 }
@@ -151,6 +188,17 @@ section.leaven__header_area {
 
     .leaven__comming_soon_form input[type="email"] {
         width: 40%;
+    }
+
+    /* Faq */
+    .leaven__accourdian_content {
+        padding: 0;
+        margin-bottom: 46px;
+    }
+
+    /* contact */
+    .leaven__contact_page_info {
+        margin-bottom: 45px;
     }
 
 }
@@ -258,6 +306,7 @@ section.leaven__header_area {
     section.leaven__cart_page_content {
         padding: 60px 3px;
     }
+
     .leaven__cart_table thead {
         display: none;
     }
@@ -362,6 +411,32 @@ section.leaven__header_area {
 
     .leaven__quantity_block {
         margin-right: 0;
+    }
+
+    /* Faq */
+
+    section.leaven__faq_page_content {
+        padding: 60px 3px;
+    }
+
+    .leaven__accourdian_content {
+        padding: 0;
+    }
+
+    /* contact */
+    section.leaven__contact_page_content {
+        padding: 60px 3px;
+    }
+
+    .leaven__contact_page_info {
+        margin-bottom: 45px;
+    }
+
+    .leaven__contact_info_social_list li a {
+        width: 30px;
+        height: 30px;
+        font-size: 18px;
+        line-height: 30px;
     }
 
 }
