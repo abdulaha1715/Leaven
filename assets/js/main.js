@@ -1,22 +1,36 @@
+/**
+ * My functions:
+ * #1 - Dropdown Arrow
+ * #2 - Responsive search box
+ * #3 - Responsive menu trigger
+ * #4 - Home-Hero Area Slider
+ * #5 - Home-Carousel Most View Product
+ * #6 - Home-Payment Area Slider
+ * #7 - Cart-Quantity plus minus
+ * 
+ */
+
 ;(function($) {
     'use strict';
 
     jQuery(document).ready(function($) {
-        console.log('hello');
-        // Dropdown Arrow
+
+        // #1 - Dropdown Arrow
         $('.leaven__main_menu nav ul li ul').addClass('submenu');
         $('.leaven__main_menu nav ul li ul').before('<span><i class="fa fa-angle-down"></i></span>');
 
-
-        $(".leaven__search_btn").click(function(){
+        // #2 - Responsive search box
+        $(".leaven__search_icon_btn").click(function(){
             $(".leaven__search_input").toggleClass("active");
         });
-        
-        $(".leaven__menu_icon").click(function(){
-            $(".leaven__menu_icon").toggleClass("active");
+
+        // #3 - Responsive menu trigger
+        $(".leaven__menu_cross_icon").click(function(){
+            $(".leaven__main_menu").removeClass("active");
+            $(".leaven__menu_icon").removeClass("active");
         });
 
-        // Hero Area Slider
+        // #4 - Home-Hero Area Slider
         $('.leaven__hero_area').slick({
             dots: true,
             arrows: false,
@@ -26,7 +40,7 @@
             autoplaySpeed: 2000,
         });
 
-        // Carousel Most View Product
+        // #5 - Home-Carousel Most View Product
         $('.leaven__most_view_carousel').slick({
             centerMode: true,
             arrows: true,
@@ -55,7 +69,7 @@
             ]
         });
 
-        // Hero Area Slider
+        // #6 - Home-Payment Area Slider
         $('.leaven__payment_carousel').slick({
             dots: false,
             arrows: false,
@@ -77,6 +91,7 @@
             ]
         });
 
+        // #7 - Cart-Quantity plus minus
         $(function() { 
             (function quantityProducts() {
                 var $quantityArrowMinus = $(".leaven__quantity_arrow_minus");

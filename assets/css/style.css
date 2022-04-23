@@ -9,17 +9,59 @@
  *
  *
  **************
- * Table of Content
+ * CSS TABLE OF CONTENTS
  **************
  *
- * 01.
- *
- *
+ * 01. Default css
+ * 02. Variables
+ * 03. Common Style
+ *     3.1 button 
+ *     3.2 Section Title and below style
+ *     3.3 Page Title and Breadcrumb
+ * 04. Header Top Area
+ * 05. Header Main
+ *     5.1 Header logo
+ *     5.2 Menu
+ *     5.3 Menu Dropdown
+ *     5.4 Search Box
+ * 06. Home Page
+ *     6.1 Hero area
+ *     6.2 Promo area
+ *     6.3 Sale Area
+ *     6.4 Offer Area
+ *     6.5 Most View Area
+ *         6.5.1 Carousel button
+ *     6.6 Featured Products
+ *     6.7 Call to action
+ *     6.8 Best seller area
+ *     6.9 Newsletter
+ *     6.10 Payment carousel
+ * 07. Footer
+ *     7.1 Footer top area
+ *     7.2 Footer bottom area          
+ * 08. Error Page
+ *     8.1 Error content
+ * 09. Comming soon Page
+ *     9.1 Comming soon content
+ * 10. Faq Page
+ *     10.1 Faq content block
+ *     10.2 Faq accourdian
+ *     10.3 Faq form
+ * 11. Cart Page
+ *     11.1 Cart content block
+ *     11.2 Cart table
+ *     11.3 Cart form
+ * 12. Contact
+ *     12.1 Contact content block
+ *     12.2 Contact info box
+ *     12.3 Contact form box
+ *     
+ *     
  *
  * 
  */
 
-/* Default css */
+/* 01. Default css */
 body {
     font-family: "Montserrat", sans-serif;
 }
@@ -36,6 +78,21 @@ li {
     list-style: none;
 }
 
+/* 02. Variables */
+:root {
+    --primary: #f15724;
+    --secondary: #202b31;
+    --gray: #585858;
+    --graybg: #f7f7f6;
+    --white: #ffffff;
+    --montserrat: "Montserrat";
+    --mont: "Mont Heavy DEMO";
+    --bebas: "Bebas Neue";
+}
+
+/* 03. Common Style */
+
+/* 3.1 button */
 .leaven__btn {
     display: inline-block;
     padding: 10px 25px;
@@ -58,19 +115,7 @@ li {
     background-color: transparent;
 }
 
-/* Variables */
-:root {
-    --primary: #f15724;
-    --secondary: #202b31;
-    --gray: #585858;
-    --graybg: #f7f7f6;
-    --white: #ffffff;
-    --montserrat: "Montserrat";
-    --mont: "Mont Heavy DEMO";
-    --bebas: "Bebas Neue";
-}
-
-/* Section Title and below style */
+/* 3.2 Section Title and below style */
 .leaven__section_title h2 {
     margin: 0;
 }
@@ -108,7 +153,7 @@ span.leaven__title_dots:after {
     left: 20px;
 }
 
-/* Page Title and Breadcrumb */
+/* 3.3 Page Title and Breadcrumb */
 section.leaven__page_title {
     padding: 30px 0;
     background: #EDEDED;
@@ -160,7 +205,7 @@ section.leaven__page_title h2 {
 }
 
 
-/* Header Top Area */
+/* 04. Header Top Area */
 .leaven__header_top_area {
     color: var(--white);
     background-color: var(--secondary);
@@ -245,14 +290,13 @@ section.leaven__page_title h2 {
     right: -12px;
 }
 
-/* Header Main  */
+/* 05. Header Main  */
 .leaven__header_area {
     padding: 25px 0;
     position: relative;
 }
 
-/* Logo */
-.leaven__logo {}
+/* 5.1 Header logo */
 
 .leaven__logo h1 {
     color: var(--secondary);
@@ -264,7 +308,7 @@ section.leaven__page_title h2 {
     color: var(--primary);
 }
 
-/* Menu */
+/* 5.2 Menu */
 .leaven__main_menu {}
 
 .leaven__main_menu nav {}
@@ -298,7 +342,7 @@ section.leaven__page_title h2 {
     color: var(--primary);
 }
 
-/* Menu Dropdown */
+/* 5.3 Menu Dropdown */
 .leaven__main_menu nav ul li ul.submenu {
     position: absolute;
     top: 140%;
@@ -336,7 +380,7 @@ section.leaven__page_title h2 {
     top: 100%;
 }
 
-/* Search Box */
+/* 5.4 Search Box */
 .leaven__search_box {}
 
 .leaven__search_box form {
@@ -355,6 +399,8 @@ section.leaven__page_title h2 {
     border-radius: 7px 0 0 7px;
 }
 
+
+.leaven__search_icon,
 .leaven__search_box form button {
     color: var(--white);
     background-color: var(--primary);
@@ -362,6 +408,10 @@ section.leaven__page_title h2 {
     padding: 0 10px;
     border-radius: 0 7px 7px 0;
     transition: all 0.3s ease;
+}
+
+a.leaven__search_icon.leaven__search_icon_btn {
+    display: none;
 }
 
 .leaven__search_box form button:hover {
@@ -408,7 +458,9 @@ section.leaven__page_title h2 {
     transform: rotate(-45deg);
 }
 
-/* Hero area */
+/* 06. Home Page */
+
+/* 6.1 Hero area */
 section.leaven__hero_area {}
 
 .leaven__hero_single_item {
@@ -485,7 +537,7 @@ ul.slick-dots {
     background: var(--primary);
 }
 
-/* Promo area */
+/* 6.2 Promo area */
 section.leaven__promo_area {
     position: relative;
     margin-top: -50px;
@@ -539,7 +591,7 @@ section.leaven__promo_area {
     color: #fff;
 }
 
-/* Sale Area */
+/* 6.3 Sale Area */
 section.leaven__sale_area {
     padding-top: 100px;
     background-color: var(--graybg);
@@ -569,7 +621,7 @@ section.leaven__sale_area {
 
 .leaven__sale_content a.leaven__sale_btn {}
 
-/* Offer Area */
+/* 6.4 Offer Area */
 section.leaven__offer_area {
     padding: 100px 0;
 }
@@ -627,7 +679,7 @@ section.leaven__offer_area {
     text-align: left;
 }
 
-/* Most View Area */
+/* 6.5 Most View Area */
 .leaven__most_view_product_area {
     padding: 100px 0;
     background-color: #f5f5f5;
@@ -707,7 +759,7 @@ section.leaven__offer_area {
     margin-top: 20px;
 }
 
-/* Carousel button */
+/* 6.5.1 Carousel button */
 button.slick-prev.pull-left,
 button.slick-next.pull-right {
     width: 30px;
@@ -738,7 +790,7 @@ button.slick-next.pull-right i {
     font-size: 0 !important;
 }
 
-/* Featured Products */
+/* 6.6 Featured Products */
 section.leaven__featured_products {
     padding: 100px 0;
 }
@@ -916,7 +968,7 @@ span.leaven__product_ribon:after {
     border: 1px solid var(--primary);
 }
 
-/* Call to action */
+/* 6.7 Call to action */
 section.leaven__call_to_action_area {}
 
 .leaven__call_to_action_area_content {
@@ -947,7 +999,7 @@ section.leaven__call_to_action_area {}
     border: 1px solid var(--primary);
 }
 
-/* Best seller area */
+/* 6.8 Best seller area */
 .leaven__best_seller_area {
     padding: 100px 0;
 }
@@ -1004,7 +1056,7 @@ section.leaven__call_to_action_area {}
     font-size: 12px;
 }
 
-/* Newsletter */
+/* 6.9 Newsletter */
 section.leaven__newsletter {
     position: relative;
     z-index: 1;
@@ -1067,7 +1119,7 @@ section.leaven__newsletter:after {
     font-size: 14px;
 }
 
-/* Payment carousel */
+/* 6.10 Payment carousel */
 section.leaven__payment_logos {
     padding: 100px 0;
 }
@@ -1086,9 +1138,547 @@ section.leaven__payment_logos {
     filter: grayscale(0%);
 }
 
-/* Footer */
 
-/* Footer top area */
+/* 08. Error Page */
+
+/* 8.1 Error content */
+.leaven__error_content_bg {
+    height: 360px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-bottom: 40px;
+}
+
+a.leaven__error_btn {
+    color: var(--white);
+    background: var(--secondary);
+    padding: 10px 30px;
+    border: 1px solid var(--secondary);
+}
+
+a.leaven__error_btn:hover {
+    color: var(--secondary);
+    background: transparent;
+    border: 1px solid var(--secondary);
+}
+
+/* 09. Comming soon Page */
+
+/* 9.1 Comming soon content */
+section.leaven__comming_soon_area {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+}
+
+section.leaven__comming_soon_area:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: var(--secondary);
+    opacity: 0.7;
+    z-index: -1;
+}
+
+.leaven__comming_soon_content {
+    color: var(--white);
+}
+
+.leaven__comming_soon_content h2 {
+    font-size: 128px;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.leaven__comming_soon_content h4 {
+    font-size: 36px;
+}
+
+div#countdown {
+    padding: 80px 0;
+}
+
+div#countdown ul {}
+
+div#countdown ul li {
+    font-size: 18px;
+    display: inline-block;
+    width: 180px;
+    position: relative;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+div#countdown ul li:after {
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 100px;
+    border: 3px solid var(--primary);
+    top: -35%;
+    left: 22%;
+    transform: rotate(135deg);
+}
+
+div#countdown ul li span {
+    display: block;
+    font-weight: 600;
+}
+
+.leaven__comming_soon_content p {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.leaven__comming_soon_form {}
+
+.leaven__comming_soon_form input[type="email"] {
+    width: 24%;
+    padding: 10px;
+    margin-right: 35px;
+    border: 2px solid var(--primary);
+    border-radius: 5px;
+    background: transparent;
+    color: var(--white);
+}
+
+input[type="email"]::placeholder {
+  color: var(--white);
+}
+
+.leaven__comming_soon_form button {
+    width: 21%;
+    padding: 10px;
+    border: 2px solid var(--primary);
+    background: var(--primary);
+    color: var(--white);
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.leaven__comming_soon_social_media {
+    margin-top: 20px;
+}
+
+.leaven__comming_soon_social_media ul {}
+
+.leaven__comming_soon_social_media ul li {
+    display: inline-block;
+}
+
+
+/* 10. Faq Page */
+
+/* 10.1 Faq content block */
+section.leaven__faq_page_content {
+    padding: 100px 0;
+}
+
+/* 10.2 Faq accourdian */
+.leaven__accourdian_content {
+    padding-right: 40px;
+}
+
+.leaven__accourdian_content .accordion-item {
+    border-radius: 0;
+    margin-bottom: 15px;
+    border: 1px solid rgba(0, 0, 0, .125);
+}
+
+.leaven__accourdian_content .accordion-button:not(.collapsed) {
+    color: var(--white);
+    background-color: var(--secondary);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.leaven__accourdian_content .accordion-button::after {
+    content: "\f067";
+    font-family: 'FontAwesome';
+    background-image: none;
+    margin-right: -8px;
+}
+
+.leaven__accourdian_content .accordion-button:not(.collapsed)::after {
+    content: "\f068";
+    font-family: 'FontAwesome';
+    background-image: none;
+    margin-right: 0;
+}
+
+.leaven__accourdian_content .accordion-button {
+    color: var(--secondary);
+    background-color: #EDEDED;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 15px;
+}
+
+/* 10.3 Faq form */
+.leaven__faq_form {}
+
+.leaven__faq_form h3 {
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.leaven__faq_form label.form-label {
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+
+.leaven__faq_form .form-control {
+    background-color: #EDEDED;
+    border-radius: 0;
+    outline: none;
+    margin-bottom: 15px;
+    border: transparent;
+    box-shadow: none;
+}
+
+.leaven__faq_form textarea {
+    resize: none;
+}
+
+.leaven__faq_form button {
+    display: block;
+    margin-left: auto;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 0;
+    padding: 4px 24px;
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
+    transition: all 0.3s ease;
+}
+
+/* 11. Cart Page */
+
+/* 11.1 Cart content block */
+section.leaven__cart_page_content {
+    padding: 100px 0;
+}
+
+/* 11.2 Cart table */
+.leaven__cart_table {}
+
+.leaven__cart_table table {}
+
+.leaven__cart_table thead {
+    border-top: 1px solid var(--primary);
+    border-bottom: 1px solid var(--primary);
+}
+
+.leaven__cart_table thead tr {}
+
+.leaven__cart_table thead tr th {
+    text-align: center;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.leaven__cart_table .table>:not(:first-child) {
+    border-top: none;
+}
+
+.leaven__cart_table tbody tr {
+    border-bottom: 1px solid var(--primary) !important;
+}
+
+span.leaven__product_price_before,
+span.leaven__product_quantity_before,
+span.leaven__product_totla_price_before {display: none;}
+
+.leaven__cart_table tbody tr td {
+    padding: 12px 0;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.leaven__product_text {
+    text-align: left;
+    padding-left: 20px;
+}
+
+.leaven__product_text h3 {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.leaven__product_text h5 {
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+span.leaven__product_price,
+span.leaven__product_totla_price {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.leaven__quantity_block {
+    width: 100px;
+    position: relative;
+    margin: 0 auto;
+}
+
+button.leaven__quantity_arrow_minus,
+button.leaven__quantity_arrow_plus {
+    cursor: pointer;
+    font-size: 15px;
+    padding: 5px;
+    width: 25px;
+    box-sizing: border-box;
+
+    outline: none;
+    border-radius: 0;
+    border: 2px solid;
+    background: transparent;
+}
+
+button.leaven__quantity_arrow_minus {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+button.leaven__quantity_arrow_plus {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+input.leaven__quantity_num {
+    font-size: 15px;
+    padding: 5px 0 5px 15px;
+    border-radius: 4px;
+    outline: none;
+    width: 100%;
+    text-align: center;
+}
+
+td.leaven__product_cross {
+    font-size: 16px;
+    font-weight: 700;
+    padding-right: 10px !important;
+}
+
+/* 11.3 Cart form */
+.leaven__cart_form {
+    padding: 25px 12px;
+    box-shadow: 1px 3px 12px -5px rgb(32 43 48);
+}
+
+.leaven__subtotal,
+.leaven__discount {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.leaven__discount p,
+.leaven__subtotal p {
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.leaven__coupon {
+    padding: 25px 0 35px;
+}
+
+input#coupon_code {
+    display: block;
+    width: 100%;
+    border: 3px solid var(--primary);
+    padding: 5px 5px;
+    margin-bottom: 12px;
+    outline: none;
+}
+
+button.leaven__coupon_button {
+    width: 100%;
+    display: block;
+    border: 2px solid var(--primary);
+    padding: 6px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--white);
+    background: var(--primary);
+}
+
+.leaven__cart_bottom_button {}
+
+.leaven__cart_bottom_button a {
+    padding: 4px;
+    display: block;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 0;
+    transition: all 0.3s ease;
+}
+
+.leaven__continue_shopping {
+    background-color: var(--secondary);
+    border: 2px solid var(--secondary);
+}
+
+.leaven__continue_shopping:hover {
+    border: 2px solid var(--secondary);
+    color: var(--secondary);
+    background-color: transparent;
+}
+
+.leaven__to_checkout {
+    margin-top: 20px;
+    background-color: var(--primary);
+    border: 2px solid var(--primary);
+}
+
+.leaven__to_checkout:hover {
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    background-color: transparent;
+}
+
+
+/* 12. Contact */
+
+/* 12.1 Contact content block */
+section.leaven__contact_page_content {
+    padding: 100px 0;
+}
+
+/* 12.2 Contact info box */
+.leaven__contact_page_info {
+    padding: 20px 40px !important;
+}
+
+.leaven__contact_page_info,
+.leaven__contact_form {
+    box-shadow: 1px 3px 12px -5px rgb(32 43 48);
+    padding: 20px;
+}
+
+.leaven__contact_page_info h3,
+.leaven__contact_form h3 {
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--primary);
+    margin-bottom: 20px;
+}
+
+.leaven__contact_info_social_list {
+    margin-bottom: 50px;
+}
+
+.leaven__contact_info_social_list h3 {
+    margin: 0;
+}
+
+.leaven__contact_info_social_list li {
+    display: inline-block;
+    padding: 5px;
+}
+
+.leaven__contact_info_social_list li a {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    color: var(--primary);
+    border-radius: 50%;
+    font-size: 24px;
+    line-height: 45px;
+}
+
+.leaven__contact_info_social_list li a:hover {
+    color: var(--white);
+    background: var(--primary);
+}
+
+.leaven__contact_info_list {
+    padding-left: 25px;
+    margin-bottom: 45px;
+}
+
+.leaven__contact_info_list li {
+    margin-bottom: 10px;
+}
+
+.leaven__contact_info_list li a {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.leaven__contact_info_list li a i {
+    display: inline-block;
+    width: 25px;
+    text-align: center;
+    margin-right: 8px;
+}
+
+/* 12.3 Contact form box */
+.leaven__contact_form {}
+
+.leaven__contact_form h3 {
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.leaven__contact_form label.form-label {
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+
+.leaven__contact_form .form-control {
+    background-color: #EDEDED;
+    border-radius: 0;
+    outline: none;
+    margin-bottom: 15px;
+    border: transparent;
+    box-shadow: none;
+}
+
+.leaven__contact_form textarea {
+    resize: none;
+}
+
+.leaven__contact_form button {
+    display: block;
+    margin-left: auto;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 0;
+    padding: 4px 24px;
+    text-transform: capitalize;
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
+    transition: all 0.3s ease;
+}
+
+
+
+
+/* 07. Footer */
+
+/* 7.1 Footer top area */
 footer {}
 
 .leaven__footer_top_area {
@@ -1224,7 +1814,7 @@ ul.leaven__footer_social_media li a:hover {
 
 ul.leaven__footer_social_media li a i {}
 
-/* Footer bottom area */
+/* 7.2 Footer bottom area */
 .leaven__footer_bottom_area {
     background: var(--primary);
     color: var(--white);
@@ -1240,536 +1830,4 @@ ul.leaven__footer_social_media li a i {}
 
 .leaven__copyright_text span {
     font-size: 15px;
-}
-
-/* Error Page */
-
-/*  */
-section.leaven__error_content_area {
-    /*padding: 300px 0;*/
-}
-
-.leaven__error_content_bg {
-    height: 360px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
-    margin-bottom: 40px;
-}
-
-a.leaven__error_btn {
-    color: var(--white);
-    background: var(--secondary);
-    padding: 10px 30px;
-    border: 1px solid var(--secondary);
-}
-
-a.leaven__error_btn:hover {
-    color: var(--secondary);
-    background: transparent;
-    border: 1px solid var(--secondary);
-}
-
-/*  */
-
-/*  */
-section.leaven__comming_soon_area {
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    position: relative;
-    z-index: 1;
-}
-
-section.leaven__comming_soon_area:after {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: var(--secondary);
-    opacity: 0.7;
-    z-index: -1;
-}
-
-.leaven__comming_soon_content {
-    color: var(--white);
-}
-
-.leaven__comming_soon_content h2 {
-    font-size: 128px;
-    font-weight: 700;
-    color: var(--primary);
-}
-
-.leaven__comming_soon_content h4 {
-    font-size: 36px;
-}
-
-div#countdown {
-    padding: 80px 0;
-}
-
-div#countdown ul {}
-
-div#countdown ul li {
-    font-size: 18px;
-    display: inline-block;
-    width: 180px;
-    position: relative;
-    text-align: center;
-    text-transform: capitalize;
-}
-
-div#countdown ul li:after {
-    position: absolute;
-    content: "";
-    width: 100px;
-    height: 100px;
-    border: 3px solid var(--primary);
-    top: -35%;
-    left: 22%;
-    transform: rotate(135deg);
-}
-
-div#countdown ul li span {
-    display: block;
-    font-weight: 600;
-}
-
-.leaven__comming_soon_content p {
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-.leaven__comming_soon_form {}
-
-.leaven__comming_soon_form input[type="email"] {
-    width: 24%;
-    padding: 10px;
-    margin-right: 35px;
-    border: 2px solid var(--primary);
-    border-radius: 5px;
-    background: transparent;
-    color: var(--white);
-}
-
-input[type="email"]::placeholder {
-  color: var(--white);
-}
-
-.leaven__comming_soon_form button {
-    width: 21%;
-    padding: 10px;
-    border: 2px solid var(--primary);
-    background: var(--primary);
-    color: var(--white);
-    text-align: center;
-    text-transform: capitalize;
-    font-weight: 500;
-    border-radius: 5px;
-}
-
-.leaven__comming_soon_social_media {
-    margin-top: 20px;
-}
-
-.leaven__comming_soon_social_media ul {}
-
-.leaven__comming_soon_social_media ul li {
-    display: inline-block;
-}
-
-
-/* Faq Page */
-section.leaven__faq_page_content {
-    padding: 100px 0;
-}
-
-.leaven__accourdian_content {
-    padding-right: 40px;
-}
-
-.leaven__accourdian_content .accordion-item {
-    border-radius: 0;
-    margin-bottom: 15px;
-    border: 1px solid rgba(0, 0, 0, .125);
-}
-
-.leaven__accourdian_content .accordion-button:not(.collapsed) {
-    color: var(--white);
-    background-color: var(--secondary);
-    font-size: 18px;
-    font-weight: 500;
-}
-
-.leaven__accourdian_content .accordion-button::after {
-    content: "\f067";
-    font-family: 'FontAwesome';
-    background-image: none;
-    margin-right: -8px;
-}
-
-.leaven__accourdian_content .accordion-button:not(.collapsed)::after {
-    content: "\f068";
-    font-family: 'FontAwesome';
-    background-image: none;
-    margin-right: 0;
-}
-
-.leaven__accourdian_content .accordion-button {
-    color: var(--secondary);
-    background-color: #EDEDED;
-    font-size: 18px;
-    font-weight: 600;
-    padding: 10px 15px;
-}
-
-/* form */
-.leaven__faq_form {}
-
-.leaven__faq_form h3 {
-    font-size: 28px;
-    font-weight: 600;
-    color: var(--primary);
-}
-
-.leaven__faq_form label.form-label {
-    font-weight: 600;
-    margin-bottom: 3px;
-}
-
-.leaven__faq_form .form-control {
-    background-color: #EDEDED;
-    border-radius: 0;
-    outline: none;
-    margin-bottom: 15px;
-    border: transparent;
-    box-shadow: none;
-}
-
-.leaven__faq_form textarea {
-    resize: none;
-}
-
-.leaven__faq_form button {
-    display: block;
-    margin-left: auto;
-    font-size: 18px;
-    font-weight: 500;
-    border-radius: 0;
-    padding: 4px 24px;
-    background-color: var(--primary);
-    border: 1px solid var(--primary);
-    transition: all 0.3s ease;
-}
-
-/* cart */
-
-section.leaven__cart_page_content {
-    padding: 100px 0;
-}
-
-.leaven__cart_table {}
-
-.leaven__cart_table table {}
-
-.leaven__cart_table thead {
-    border-top: 1px solid var(--primary);
-    border-bottom: 1px solid var(--primary);
-}
-
-.leaven__cart_table thead tr {}
-
-.leaven__cart_table thead tr th {
-    text-align: center;
-    font-size: 16px;
-    text-transform: uppercase;
-    color: var(--primary);
-    font-weight: 600;
-}
-
-.leaven__cart_table .table>:not(:first-child) {
-    border-top: none;
-}
-
-.leaven__cart_table tbody tr {
-    border-bottom: 1px solid var(--primary) !important;
-}
-
-span.leaven__product_price_before,
-span.leaven__product_quantity_before,
-span.leaven__product_totla_price_before {display: none;}
-
-.leaven__cart_table tbody tr td {
-    padding: 12px 0;
-    text-align: center;
-    vertical-align: middle;
-}
-
-.leaven__product_text {
-    text-align: left;
-    padding-left: 20px;
-}
-
-.leaven__product_text h3 {
-    font-size: 18px;
-    font-weight: 600;
-    text-transform: capitalize;
-}
-
-.leaven__product_text h5 {
-    font-size: 14px;
-    font-weight: 500;
-    text-transform: capitalize;
-}
-
-span.leaven__product_price,
-span.leaven__product_totla_price {
-    display: inline-block;
-    font-size: 15px;
-    font-weight: 500;
-}
-
-.leaven__quantity_block {
-    width: 100px;
-    position: relative;
-    margin: 0 auto;
-}
-
-button.leaven__quantity_arrow_minus,
-button.leaven__quantity_arrow_plus {
-    cursor: pointer;
-    font-size: 15px;
-    padding: 5px;
-    width: 25px;
-    box-sizing: border-box;
-
-    outline: none;
-    border-radius: 0;
-    border: 2px solid;
-    background: transparent;
-}
-
-button.leaven__quantity_arrow_minus {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-button.leaven__quantity_arrow_plus {
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
-input.leaven__quantity_num {
-    font-size: 15px;
-    padding: 5px 0 5px 15px;
-    border-radius: 4px;
-    outline: none;
-    width: 100%;
-    text-align: center;
-}
-
-td.leaven__product_cross {
-    font-size: 16px;
-    font-weight: 700;
-    padding-right: 10px !important;
-}
-
-
-
-
-.leaven__cart_form {
-    padding: 25px 12px;
-    box-shadow: 1px 3px 12px -5px rgb(32 43 48);
-}
-
-.leaven__subtotal,
-.leaven__discount {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 15px;
-}
-
-.leaven__discount p,
-.leaven__subtotal p {
-    font-weight: 600;
-    text-transform: capitalize;
-    margin: 0;
-}
-
-.leaven__coupon {
-    padding: 25px 0 35px;
-}
-
-input#coupon_code {
-    display: block;
-    width: 100%;
-    border: 3px solid var(--primary);
-    padding: 5px 5px;
-    margin-bottom: 12px;
-    outline: none;
-}
-
-button.leaven__coupon_button {
-    width: 100%;
-    display: block;
-    border: 2px solid var(--primary);
-    padding: 6px;
-    font-weight: 600;
-    text-transform: capitalize;
-    color: var(--white);
-    background: var(--primary);
-}
-
-.leaven__cart_bottom_button {}
-
-.leaven__cart_bottom_button a {
-    padding: 4px;
-    display: block;
-    text-transform: uppercase;
-    font-size: 16px;
-    font-weight: 500;
-    border-radius: 0;
-    transition: all 0.3s ease;
-}
-
-.leaven__continue_shopping {
-    background-color: var(--secondary);
-    border: 2px solid var(--secondary);
-}
-
-.leaven__continue_shopping:hover {
-    border: 2px solid var(--secondary);
-    color: var(--secondary);
-    background-color: transparent;
-}
-
-.leaven__to_checkout {
-    margin-top: 20px;
-    background-color: var(--primary);
-    border: 2px solid var(--primary);
-}
-
-.leaven__to_checkout:hover {
-    border: 2px solid var(--primary);
-    color: var(--primary);
-    background-color: transparent;
-}
-
-
-/* contact */
-section.leaven__contact_page_content {
-    padding: 100px 0;
-}
-
-.leaven__contact_page_info {
-    padding: 20px 40px !important;
-}
-
-.leaven__contact_page_info,
-.leaven__contact_form {
-    box-shadow: 1px 3px 12px -5px rgb(32 43 48);
-    padding: 20px;
-}
-
-.leaven__contact_page_info h3,
-.leaven__contact_form h3 {
-    font-size: 28px;
-    font-weight: 600;
-    color: var(--primary);
-    margin-bottom: 20px;
-}
-
-.leaven__contact_info_social_list {
-    margin-bottom: 50px;
-}
-
-.leaven__contact_info_social_list h3 {
-    margin: 0;
-}
-
-.leaven__contact_info_social_list li {
-    display: inline-block;
-    padding: 5px;
-}
-
-.leaven__contact_info_social_list li a {
-    display: inline-block;
-    width: 45px;
-    height: 45px;
-    color: var(--primary);
-    border-radius: 50%;
-    font-size: 24px;
-    line-height: 45px;
-}
-
-.leaven__contact_info_social_list li a:hover {
-    color: var(--white);
-    background: var(--primary);
-}
-
-.leaven__contact_info_list {
-    padding-left: 25px;
-    margin-bottom: 45px;
-}
-
-.leaven__contact_info_list li {
-    margin-bottom: 10px;
-}
-
-.leaven__contact_info_list li a {
-    font-size: 16px;
-    font-weight: 600;
-    color: var(--primary);
-}
-
-.leaven__contact_info_list li a i {
-    display: inline-block;
-    width: 25px;
-    text-align: center;
-    margin-right: 8px;
-}
-
-
-.leaven__contact_form {}
-
-.leaven__contact_form h3 {
-    font-size: 28px;
-    font-weight: 600;
-    color: var(--primary);
-}
-
-.leaven__contact_form label.form-label {
-    font-weight: 600;
-    margin-bottom: 3px;
-}
-
-.leaven__contact_form .form-control {
-    background-color: #EDEDED;
-    border-radius: 0;
-    outline: none;
-    margin-bottom: 15px;
-    border: transparent;
-    box-shadow: none;
-}
-
-.leaven__contact_form textarea {
-    resize: none;
-}
-
-.leaven__contact_form button {
-    display: block;
-    margin-left: auto;
-    font-size: 18px;
-    font-weight: 500;
-    border-radius: 0;
-    padding: 4px 24px;
-    text-transform: capitalize;
-    background-color: var(--primary);
-    border: 1px solid var(--primary);
-    transition: all 0.3s ease;
 }
