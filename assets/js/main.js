@@ -3,10 +3,11 @@
  * #1 - Dropdown Arrow
  * #2 - Responsive search box
  * #3 - Responsive menu trigger
- * #4 - Home-Hero Area Slider
- * #5 - Home-Carousel Most View Product
- * #6 - Home-Payment Area Slider
- * #7 - Cart-Quantity plus minus
+ * #4 - Responsive menu close
+ * #5 - Home-Hero Area Slider
+ * #6 - Home-Carousel Most View Product
+ * #7 - Home-Payment Area Slider
+ * #8 - Cart-Quantity plus minus
  * 
  */
 
@@ -25,12 +26,18 @@
         });
 
         // #3 - Responsive menu trigger
+        $(".leaven__menu_icon").click(function(){
+            $(".leaven__main_menu").toggleClass("active");
+            $(".leaven__menu_icon").toggleClass("active");
+        });
+
+        // #4 - Responsive menu close
         $(".leaven__menu_cross_icon").click(function(){
             $(".leaven__main_menu").removeClass("active");
             $(".leaven__menu_icon").removeClass("active");
         });
 
-        // #4 - Home-Hero Area Slider
+        // #5 - Home-Hero Area Slider
         $('.leaven__hero_area').slick({
             dots: true,
             arrows: false,
@@ -40,7 +47,7 @@
             autoplaySpeed: 2000,
         });
 
-        // #5 - Home-Carousel Most View Product
+        // #6 - Home-Carousel Most View Product
         $('.leaven__most_view_carousel').slick({
             centerMode: true,
             arrows: true,
@@ -69,7 +76,7 @@
             ]
         });
 
-        // #6 - Home-Payment Area Slider
+        // #7 - Home-Payment Area Slider
         $('.leaven__payment_carousel').slick({
             dots: false,
             arrows: false,
@@ -91,7 +98,7 @@
             ]
         });
 
-        // #7 - Cart-Quantity plus minus
+        // #8 - Cart-Quantity plus minus
         $(function() { 
             (function quantityProducts() {
                 var $quantityArrowMinus = $(".leaven__quantity_arrow_minus");
